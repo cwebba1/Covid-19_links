@@ -1,0 +1,468 @@
+/*  prototype_style.css 030820
+prototype_style.css 022519
+prototype_style.css 020719
+  */
+
+/*	*	*	*	*	*	[  BASE / RESET  ]	*	*	*	*	*/
+
+* { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering:optimizeLegibility;
+}
+
+body, nav, ul, li, a  {margin: 0; padding: 0;}
+
+body { 
+font: 300 normal 1em/1.70em 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;  /* 17 / 16 */
+	transition:all .5s ease-in; 
+color:hsla(27, 100%, 7%, 1);
+}
+
+header:after, nav:after, article:after, aside:after, footer:after, hgroup:after, section:after, .logo:after, figure:after, .page:after { 
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+p {
+font: 1em  'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+font-weight:300;
+line-height: 1.5em;
+color:hsla(27, 100%, 7%, 1);
+margin: 0 0 .5em 0;
+}
+
+p:last-of-type { 
+margin-bottom:1.5em;
+}
+
+/*
+3/16 = 0.1875
+0.375
+9/16 = 0.5625
+10/16 = 0.625
+11/16 = 0.6875
+12/16 = 0.75
+13/16 = 0.8125
+14/16 = 0.875
+15/16 = 0.9375
+6/16 = 0.375
+18/16 = 1.125
+19/16 = 1.1875
+20/16 = 1.25
+*/
+
+.p6 { font-size:0.375em;
+line-height:1em;
+}
+
+.p8 { font-size:0.5em;
+line-height:1em;
+}
+
+.p9 {font-size:.5625em;
+line-height: 1.5em;
+margin: 0 0 2.15em 0;
+}/*  18px*/
+
+.p10 {font-size:.625em;
+line-height: 1.5em;
+margin: 0 0 1.75em 0;
+}/*  .625em  */
+
+.p11 {font-size:.6875em;
+line-height: 1.5em;
+margin: 0 0 1.375em 0;
+}
+
+.p12 {font-size:.75em;
+line-height: 1.5em;
+margin: .75em 0 .75em 0;
+}
+
+.p13 {font-size:.8125em;
+line-height: 1.6875em;
+margin: 0.65625em 0 0.65625em 0;
+}/* 12.5px margin */
+
+.p14 {font-size:.875em;
+line-height: 1.5em;
+margin: .625em 0 1em 0;
+}/* .125em+1.5em  */
+
+.p14b {font-size:.875em;
+line-height: 1.5em;
+margin: 0;
+}/*  0.6875em  */
+
+.p15 {font-size:.9375em;
+line-height: 1.5em;
+margin: 0 0 0.625em 0;
+}
+
+.p18 {font-size:1.125em;
+line-height: 1.375em;
+margin: 0 0 0.458333333333333em 0;
+}
+
+.p19 {font-size:1.1875em;
+line-height: 1.1875em;
+margin: 0 0 0.625em 0;
+}
+
+.p20 {font-size:1.25em;
+line-height: 1.25em;
+margin: 0 0 0.416666666666667em 0;
+}
+
+.p24 {font-size:1.5em;
+line-height: 2.25em;
+margin: .25em 0 1.5em 0;
+float:right;
+text-align:right;
+}
+
+/* LINKS */
+
+a { 
+  color: #004477;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  vertical-align:baseline; 
+  margin:0; 
+  padding:0; 
+  border: 0;
+  outline: 0;
+  background:transparent; 
+  transition: 0.2s color linear;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}/*csw blue */
+
+a:focus { outline: 0; }
+
+a:hover, a:active { outline: none; }
+
+a:focus, a:hover { color: #06C;
+text-decoration: underline; 
+}
+
+a:visited {
+/* color: #900000; */
+color: #2288AA;
+text-decoration: none;
+}
+
+p a, p a:visited { line-height: inherit; }
+
+a img, img { border: none; }
+a img {display: block;} /* Stops image links getting text link styles */
+
+/* Headers */
+
+h1, h2, h3, h4, h5, h6,  blockquote {font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  color: #8c4103;
+  color:hsla(27, 96%, 28%, 1);/*#8C4103;*/
+  font-weight: 300;
+  margin:0;
+}
+
+h1 { font-size: 2em; line-height:1.25em; margin-bottom:0.5em; }
+
+h2 { font-size:1.75em;line-height:1.25em; margin-bottom:0.5em; }
+
+h3 { font-size:1.5em;line-height:1.25em; margin-bottom:0.5em; }
+
+h4 { font-size:1.375em;line-height:1.25em; margin-bottom:0.5em; }
+
+h5 { font-size:1em;line-height:1.25em; margin-bottom:0.5em; }
+
+h6 { font-size:1em;line-height:1.25em; margin-bottom:0.5em; color:#000; }
+
+
+img {
+border: 0;
+margin: 0 auto 0 auto;
+background:transparent;
+vertical-align:baseline;
+}
+
+svg:not(:root) {overflow: hidden} /* Correct IE9 overflow */
+
+img { -ms-interpolation-mode: bicubic; }
+
+a img{border:0}
+
+figure img, figure object, figure embed, figure video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* example:
+img {
+  max-width:240px;
+  width:100%
+} */
+
+figure {
+padding:0;
+margin:0 0 1em;
+font-size:1rem;
+}
+
+figcaption { 
+  margin:.375em 0 0; 
+  font-size:1em; 
+  line-height:1.5em; 
+  color: #333333;
+}
+figcaption p { 
+  margin:0; 
+  font-size:0.75em; 
+  line-height:1.25em; 
+  color: #333333;
+  text-align:left;
+}
+
+figcaption p:last-of-type { 
+  margin:0; 
+}
+
+.border {
+	border-style: solid;
+	border-color: #CFCFCF;
+border-width: 1px;
+}
+
+ul { list-style:initial;
+}
+
+/* eliminate this reset
+ol,ul{ list-style:none;}
+*/
+
+nav ul{
+    list-style:none;
+}
+
+/*	This style conflicts with Flexbox. (Grrrr)
+nav li{
+    display:inline;
+}
+*/
+
+li ul, li ol {margin:0;}
+dl dd {margin-left: 1.5em}
+
+ul li{
+-webkit-column-break-inside:avoid;
+-moz-column-break-inside:avoid;
+-o-column-break-inside:avoid;
+-ms-column-break-inside:avoid;
+column-break-inside:avoid;
+}
+
+ul.example {
+    list-style: none;
+  line-height:inherit;
+    padding:0;
+}
+ 
+.example li { 
+    padding-left: 1em; 
+    text-indent: -.75em;
+    margin:0 0 .5em;
+}
+ 
+.example li:before {
+    content: "» ";
+    color: #A92323; /* or whatever color you prefer */
+}/* Â» RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK &#187; */
+
+pre { 
+  display:inline;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+ }
+
+code {
+  color:#AA6633;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", 
+"Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+"Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  }
+
+.wrap-text {
+  word-wrap: break-word;
+  -epub-word-break: break-all;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  /* Non standard for webkit */
+  overflow-wrap: break-word;
+  -epub-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+  @media all and (min-width : 960px)  {
+/* - CSS3 Columns */
+.column-box { 
+  column-count: 2;
+  column-gap: 1em;
+  margin-bottom: 1em;
+  }
+
+.column-box p {
+  break-inside: avoid;
+  }
+}
+
+/*	*	*	*	*	[  TOP NAVIGATION  ]	*	*	*	*/
+
+nav ul{
+    list-style:none;
+}
+
+header {
+  min-height: 80px;
+  padding-top: .5em;
+  text-align: center;
+}
+
+header figure {
+  width: 55%;
+  max-width: 16.5em;
+  margin: 0.5em auto;
+}
+
+#main-nav ul {
+  text-align: center;
+padding:0;
+margin:0.5em 0 1em;
+}
+
+#main-nav ul li {
+  display: inline-block;
+  line-height: 2em;
+  margin: 0 0.5em;
+}
+
+#main-nav ul li a {
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1em;
+  letter-spacing: 1px;
+}
+
+/*
+#main-nav ul li a:hover, #main-nav ul li a:focus, #main-nav ul li a.active {
+  color: #5ABA9F;
+  color: #5aba9f;
+} */
+
+#main-nav ul::after,
+#main-nav::after {
+  content: '';
+  display: block;
+  clear: both !important;
+  float: none !important;
+}
+
+/*	*	*	*	*	[  FOOTER NAVIGATION  ]	*	*	*	*/
+
+.sock {
+  padding: 0.5rem;
+}
+
+.copyright {
+  font-size: 0.6875em;
+  line-height: 1.2em;
+  color: #889;
+margin:0 0 1em;
+}
+
+.copyright-box {
+  text-align: center;
+  margin: auto;
+}
+
+.footsie {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.footsie ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.footsie ul li {
+  display: block;
+  padding: .5rem 1rem;
+}
+
+.footsie a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footsie a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+@media (min-width: 720px) {
+  .copyright-box {
+    text-align: left;
+    padding-left:0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    min-width: 15em;
+  }
+
+.copyright {
+margin:1.5em 0 0.5em;
+}
+
+  .footsie {
+    width: 60%;
+    display: inline-block;
+    font-size: 0.875em;
+    text-align: right;
+    float: right;
+margin-top:-0.5em;
+  }
+
+  .footsie ul {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+
+  .footsie ul li {
+    display: block;
+    padding: .5rem .5em;
+  }
+}
+

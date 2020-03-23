@@ -1,0 +1,206 @@
+/* 032220 css3_columns
+_css3_columns 072716 */
+
+/*    - - - - [ CSS3 COLUMNS ] - - - - -  */
+
+.columns01,
+.columns2b,
+.columns02,
+.columns02b,
+.columns02c,
+.columns3,
+.columns03b,
+.columns03,
+.columns04 {
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+    -webkit-column-rule: 0;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+    -moz-column-rule: 0;
+  -ms-column-count: 1;
+  -ms-column-gap: 1em;
+    -ms-column-rule: 0;
+  column-count: 1;
+  column-gap: 1em;
+    column-rule: 0;
+}
+
+.columns01 p,
+.columns2b p,
+.columns02 p,
+.columns02b p,
+.columns02c p,
+.columns3 p,
+.columns03b p,
+.columns03 p {
+  display: inline-block;
+}
+
+.columns2b p:first-of-type { margin:0 auto .5em; }
+.columns2b p:last-of-type { margin:.5em auto 0; }
+
+/* CSS3 COLUMNS MEDIA QUERIES */
+@media only screen and (min-width: 400px) {
+.columns02,
+.columns02b,
+.columns02c {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  column-count: 2;
+  }
+}
+
+@media screen and (min-width: 560px) {
+.columns01 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  column-count: 2;
+  }
+.columns03b{
+  -webkit-column-count: 2;
+  -webkit-column-rule: 0;
+  -moz-column-count: 2;
+  -moz-column-rule: 0;
+  -ms-column-count: 2;
+  -ms-column-rule: 0;
+  column-count: 2;
+  column-rule: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .columns4 {
+    -webkit-column-count: 2;
+    -webkit-column-rule: 0;
+    -moz-column-count: 2;
+    -moz-column-rule: 0;
+    -ms-column-count: 2;
+    -ms-column-rule: 0;
+    column-count: 2;
+    column-rule: 0;
+  }
+}
+@media screen and (min-width: 650px) {
+.columns2b {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  column-count: 2;
+  }
+}
+@media screen and (min-width: 720px) {
+  .columns3 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .columns03 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+.columns02 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 787px), print {
+  .columns4 {
+    -webkit-column-count: 3;
+    -webkit-column-rule: 0;
+    -moz-column-count: 3;
+    -moz-column-rule: 0;
+    -ms-column-count: 3;
+    -ms-column-rule: 0;
+    column-count: 3;
+    column-rule: 0;
+  }
+}
+
+@media screen and (min-width:800px) {  
+ .columns03b{
+    -webkit-column-count: 3;
+    -webkit-column-rule: 0;
+    -moz-column-count: 3;
+    -moz-column-rule: 0;
+    -ms-column-count: 3;
+    -ms-column-rule: 0;
+    column-count: 3;
+    column-rule: 0;
+}
+}
+
+@media screen and (min-width: 800px) and (max-width: 920px) { 
+  .columns01 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .columns01 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    column-count: 1;
+  }
+.columns02,
+.columns02b {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -ms-column-count: 1;
+  column-count: 1;
+  }
+.columns3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  column-count: 3;
+  }
+}
+@media screen and (min-width: 920px) and (max-width: 1160px) {
+.columns2b {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -ms-column-count: 1;
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+.columns03 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  column-count: 3;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+.columns4 {
+-webkit-column-count: 4;
+-webkit-column-rule: 0;
+-moz-column-count: 4;
+-moz-column-rule: 0;
+-ms-column-count: 4;
+-ms-column-rule: 0;
+column-count: 4;
+column-rule: 0;
+  }
+}
+

@@ -1,0 +1,90 @@
+/* This: prototype-sticky-footer.css
+From: 032220_prototype-sticky-footer.css <-- Prototype Sandbox
+ 030820_prototype-sticky-footer.css <-- SVG Sandbox
+prototype-sticky-footer.css	021219 */
+
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FFDEDD; }
+header, footer {	background:#FEFDFA; }
+.sidebar {	background:#CEEFEF; }
+
+/* _sticky_footer_flex.scss */
+
+/* RESETS */
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin:0;
+}
+
+/* _sticky_footer_flex.scss */
+/* Sticky-footer Flex Declarations */
+
+*,:after,:before{box-sizing:border-box;
+}
+
+/* Only add this declaration if needed for SVG
+html { 
+height:100%;
+}  */
+
+
+/* Sticky-footer Flex Declarations */
+
+/* body seems to require both height and min-height declarations to accommodate both sticky footer flex by itself and also sticky sticky footer with inner sticky flex. (?) */
+body { 		
+display:flex;
+flex-direction:column;
+height:100%;			/* need for sticky footer flex only */
+min-height:100%;		/* need for sticky footer + inner sticky flex */
+}
+
+footer, header { 
+flex:none;
+}
+main { 
+flex:1 0 auto;
+width:100%;
+}
+main:after { content:'\00a0';
+display:block;
+/*margin-top:1.5em;*/
+height:0;
+visibility:hidden;
+}
+
+
+main--full {
+padding:0;
+}
+
+main--full:after { 
+content:none;
+}
+
+@media (min-width:768px) {
+main { padding-top:0
+}
+
+/*main:after { margin-top:2em;
+}*/
+}
+
+/* END STICKY FOOTER*/
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
